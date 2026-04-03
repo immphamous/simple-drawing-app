@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="tools">
+            <button class="tool-button" id="pen-tool" onclick="select('pen')"></button>
+            <button class="tool-button" id="eraser-tool" onclick="select('eraser')"></button>
+            <button class="tool-button" id="bucket-tool" onclick="select('bucket')"></button>
+            <div class="tool-gap"></div>
+            <button class="tool-button" id="undo-button" onclick="undo()"></button>
+            <button class="tool-button" id="redo-button" onclick="redo()"></button>
+            <button class="tool-button" id="download-button" onclick="download()"></button>
+        </div>
+        <div id="viewport">
+            <canvas id="canvas">
+                
+            </canvas>
+        </div>
+        <div id="resize-view">
+            <button id="resizer-button">
+
+            </button>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

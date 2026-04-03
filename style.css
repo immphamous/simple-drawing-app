@@ -1,0 +1,87 @@
+.tools {
+    padding: 2px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#pen-tool {
+    background-image: url("icons/pen.png");
+}
+
+#eraser-tool {
+    background-image: url("icons/eraser.png");
+}
+
+#bucket-tool {
+    background-image: url("icons/bucket.png");
+}
+
+#tool-gap {
+    width: 0px;
+}
+
+#undo-button {
+    background-image: url("icons/undo.png");
+}
+
+#redo-button {
+    background-image: url("icons/redo.png");
+}
+
+#download-button {
+    background-image: url("icons/download.png");
+}
+
+.tool-button {
+    image-rendering: pixelated;
+    width: 26px;
+    height: 26px;
+    border: 0;
+    outline: 1px solid #e1e1e1;
+    background-color: white;
+}
+
+.tool-button-selected {
+    filter: invert(1);
+}
+
+.tool-button:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+canvas {
+    outline: 1px solid #e1e1e1;
+    background-color: white;
+    image-rendering: pixelated;
+    box-sizing: border-box;
+}
+
+#resize-view {
+    
+    outline-style: dashed;
+    outline-width: 0px;
+    outline-color: #469fb180;
+    position: absolute;
+}
+
+#resizer-button {
+    position: absolute;
+    
+    border:  1px solid #e1e1e1;
+    padding: 0;
+    margin: 0;
+    width: 6px;
+    height: 6px;
+
+    cursor: se-resize;
+}
+
+#resizer-button:hover {
+    background-color: white;
+}
+
+body {
+    background-color: rgb(242, 242, 242);
+}
